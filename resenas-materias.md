@@ -5,7 +5,7 @@
   * [TC5032: Visualización de datos](resenas_materias/TC5032.md)
   * [TC4030: Inteligencia artificial y aprendizaje automático](resenas_materias/TC4030.md)
   * [TE4017: Internet de las cosas y redes de sensores](resenas_materias/TE4017.md)
-  * [TC5035: Proyecto integrador](resenas_materias/TC5035)
+  * [TC5035: Proyecto integrador](resenas_materias/TC5035.md)
   - - - -
 ## Materias Optativas
   * [AD4056: Estrategia disruptiva y transformación digital](resenas_materias/AD4056.md)
