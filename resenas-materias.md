@@ -1,5 +1,10 @@
 # Reseñas de Materias
 
+<!-- HTML elements for search -->
+<input type="text" id="search-input" placeholder="Search blog posts..">
+<ul id="results-container"></ul>
+
+
 ## Materias Base
   * [TC4029: Ciencia y analítica de datos](resenas_materias/TC4029.md)
   * [TC5032: Visualización de datos](resenas_materias/TC5032.md)
@@ -25,3 +30,19 @@
   * [TC5043: Procesamiento de lenguaje natural](resenas_materias/TC5043.md)
   * [TC5044: Operaciones de aprendizaje automático](resenas_materias/TC5044.md)
   * [TI4023: Gestión de la protección de datos](resenas_materias/TI4023.md)
+
+
+<script src="/assets/js/jekyll-search.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: 'search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+    noResultsText: 'No results found',
+    limit: 10,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+</script>
