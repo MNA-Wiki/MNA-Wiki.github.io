@@ -1,7 +1,6 @@
 # Reseñas de Materias
 
-<!-- HTML elements for search -->
-<input type="text" id="search-input" placeholder="Search blog posts..">
+<input type="text" id="search-input" placeholder="Buscar...">
 <ul id="results-container"></ul>
 
 
@@ -38,9 +37,9 @@
   SimpleJekyllSearch({
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('results-container'),
-    json: 'search.json',
+    json: '/assets/search_indexes/materias.json',
     searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
-    noResultsText: 'No results found',
+    noResultsText: 'No se encontraron resultados',
     limit: 10,
     fuzzy: false,
     exclude: ['Welcome']

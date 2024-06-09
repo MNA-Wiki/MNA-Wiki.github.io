@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Pedro A.",
+    "category": "",
+    "tags": "Profesor",
+    "url": "/#!resenas_profesores/pedro_a.md"
+  },
+  {
+    "title": "Verónica G.",
+    "category": "",
+    "tags": "Profesor",
+    "url": "/#!resenas_profesores/veronica_g.md"
+  },
+  {
+    "title": "Alonso P.",
+    "category": "",
+    "tags": "Tutor",
+    "url": "/#!resenas_profesores/alonso_p.md"
+  },
+  {
+    "title": "Lizeth D.",
+    "category": "",
+    "tags": "Tutor",
+    "url": "/#!resenas_profesores/lizeth_d.md"
+  }
+]
