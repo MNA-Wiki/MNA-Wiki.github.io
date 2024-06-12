@@ -5,5 +5,6 @@
 [Reseñas de Profesores](resenas-profesores.md)
 [Recursos Útiles](recursos-utiles.md)
 [Calendario de Eventos](calendario-eventos.md)
+[Requisitos de las Materias](requisitos-materias.md)
 - - - -
 [Acerca](acerca.md)
