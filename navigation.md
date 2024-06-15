@@ -2,8 +2,9 @@
 
 [Inicio](index.md)
 [Reseñas de Materias](resenas-materias.md)
-[Reseñas de Profesores](resenas-profesores.md)
 [Recursos Útiles](recursos-utiles.md)
 [Calendario de Eventos](calendario-eventos.md)
+[Foros de Discusión](https://github.com/MNA-Wiki/MNA-Wiki.github.io/discussions)
+
 - - - -
 [Acerca](acerca.md)
