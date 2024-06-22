@@ -1,23 +1,28 @@
-import datetime
+import requests
+import xml.etree.ElementTree as ET
 
-# Lista de noticias. En un caso real, podrías obtener esto desde una API o un archivo de datos
-noticias = [
-    {
-        "fecha": "2024-06-21",
-        "titulo": "IA y Ética: Nuevas Regulaciones en Europa",
-        "descripcion": "Europa Establece Nuevas Regulaciones para el Uso Ético de la IA. La Unión Europea ha aprobado un nuevo marco regulatorio que establece directrices estrictas para el uso ético de la inteligencia artificial. Estas regulaciones buscan garantizar la transparencia, equidad y responsabilidad en el desarrollo y despliegue de tecnologías de IA, protegiendo así los derechos de los ciudadanos y fomentando la innovación responsable."
-    },
-    {
-        "fecha": "2024-06-20",
-        "titulo": "IA en la Agricultura: Detección de Plagas",
-        "descripcion": "Un equipo de la Universidad de Stanford ha presentado un sistema de IA que utiliza imágenes satelitales y datos meteorológicos para detectar la presencia de plagas en cultivos agrícolas. Esta tecnología permite a los agricultores actuar de manera proactiva, mejorando la salud de los cultivos y aumentando la producción."
-    },
-    {
-        "fecha": "2024-06-19",
-        "titulo": "Avances en la IA Médica para Diagnóstico Temprano",
-        "descripcion": "Investigadores del MIT han desarrollado un algoritmo de IA capaz de detectar enfermedades cardíacas en etapas tempranas con una precisión del 95%. Este avance promete mejorar significativamente los diagnósticos y tratamientos preventivos, reduciendo la mortalidad asociada a enfermedades cardíacas."
-    }
-]
+# URL del feed RSS de Google News para un tema específico
+rss_url = 'https://news.google.com/rss/search?q=Inteligencia+Artificial&hl=es-419&gl=MX&ceid=MX:es-419'
+
+# Hacer una solicitud GET al feed RSS
+response = requests.get(rss_url)
+
+# Parsear el contenido del feed RSS
+root = ET.fromstring(response.content)
+
+# Extraer noticias del feed RSS
+noticias = []
+for item in root.findall('.//item'):
+    titulo = item.find('title').text
+    descripcion = item.find('description').text
+    link = item.find('link').text
+    pub_date = item.find('pubDate').text
+    noticias.append({
+        'fecha': pub_date,
+        'titulo': titulo,
+        'descripcion': descripcion,
+        'link': link
+    })
 
 # Leer el contenido actual de noticias.md
 with open('noticias.md', 'r', encoding='utf-8') as file:
@@ -27,12 +32,14 @@ with open('noticias.md', 'r', encoding='utf-8') as file:
 nuevo_contenido = "# Noticias Relevantes sobre la Maestría y el Campo de la IA\n\n## Últimas Noticias\n\n"
 
 for noticia in noticias:
-    nuevo_contenido += f"### {noticia['fecha']} - {noticia['titulo']}\n**{noticia['titulo']}**\n{noticia['descripcion']}\n\n"
+    nuevo_contenido += f"### {noticia['fecha']} - {noticia['titulo']}\n"
+    nuevo_contenido += f"**{noticia['titulo']}**\n"
+    nuevo_contenido += f"{noticia['descripcion']}\n"
+    nuevo_contenido += f"[Leer más]({noticia['link']})\n\n"
 
 nuevo_contenido += "## Archivo de Noticias\n"
-
 for noticia in noticias:
-    nuevo_contenido += f"- {noticia['fecha']} - [{noticia['titulo']}](#)\n"
+    nuevo_contenido += f"- {noticia['fecha']} - [{noticia['titulo']}]({noticia['link']})\n"
 
 # Escribir el contenido actualizado en noticias.md
 with open('noticias.md', 'w', encoding='utf-8') as file:
