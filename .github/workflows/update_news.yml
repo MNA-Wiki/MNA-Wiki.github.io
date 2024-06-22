@@ -1,14 +1,14 @@
-name: Update News
+name: Update News and Deploy to GitHub Pages
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Esto ejecutará el flujo de trabajo diariamente a medianoche
+    - cron: '0 0 * * *' 
   push:
     branches:
       - main
 
 permissions:
-  contents: write  # Otorga permisos de escritura al GITHUB_TOKEN
+  contents: write  
 
 jobs:
   update-news:
@@ -31,12 +31,6 @@ jobs:
     - name: Run update script
       run: python update_news.py
 
-    - name: Force GitHub Pages rebuild
-      run: |
-        touch .nojekyll  # Toca un archivo para forzar el commit
-        git add .nojekyll
-        git commit -m 'Forzar reconstrucción de GitHub Pages'
-
     - name: Commit and push changes
       env:
         GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
@@ -46,3 +40,17 @@ jobs:
         git add noticias.md
         git commit -m 'Actualización automática de noticias'
         git push
+
+  deploy:
+    needs: update-news
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./  
