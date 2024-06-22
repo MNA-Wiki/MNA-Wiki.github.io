@@ -31,6 +31,12 @@ jobs:
     - name: Run update script
       run: python update_news.py
 
+    - name: Force GitHub Pages rebuild
+      run: |
+        touch .nojekyll  # Toca un archivo para forzar el commit
+        git add .nojekyll
+        git commit -m 'Forzar reconstrucción de GitHub Pages'
+
     - name: Commit and push changes
       env:
         GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
