@@ -20,6 +20,6 @@ Mantente informado sobre los próximos eventos, talleres y seminarios relacionad
 Esta wiki es un esfuerzo colaborativo y está abierta a contribuciones de todos los estudiantes y profesores. Si tienes información útil, recursos adicionales o correcciones, no dudes en contribuir para hacer de esta wiki una herramienta aún más valiosa para todos.
 
 ## Contacto
-Si tienes preguntas o necesitas más información, puedes ponerte en contacto con nosotros a través del correo electrónico: [contacto@tec.mx](mailto:mna-wiki@leo.soy).
+Si tienes preguntas o necesitas más información, puedes ponerte en contacto con nosotros a través del correo electrónico: [mna-wiki@leo.soy](mailto:mna-wiki@leo.soy).
 
 Esperamos que encuentres esta wiki útil y que te ayude a tener una experiencia enriquecedora en la Maestría en Inteligencia Artificial Aplicada del Tec de Monterrey.
