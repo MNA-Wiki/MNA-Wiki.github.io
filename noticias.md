@@ -2,6 +2,11 @@
 
 ## Últimas Noticias
 
+### Mon, 30 Sep 2025 12:00:00 GMT - Introducing Claude Sonnet 4.5 - Anthropic
+**Introducing Claude Sonnet 4.5 - Anthropic**
+<a href="https://www.anthropic.com/news/claude-sonnet-4-5" target="_blank">Introducing Claude Sonnet 4.5</a>&nbsp;&nbsp;<font color="#6f6f6f">Anthropic</font>
+[Leer más](https://www.anthropic.com/news/claude-sonnet-4-5)
+
 ### Sun, 28 Sep 2025 17:50:00 GMT - Nuevos cursos gratuitos de inteligencia artificial, datos y software con Microsoft y el Ministerio de las TIC - Infobae
 **Nuevos cursos gratuitos de inteligencia artificial, datos y software con Microsoft y el Ministerio de las TIC - Infobae**
 <a href="https://news.google.com/rss/articles/CBMi5AFBVV95cUxQZkVhNHVpdFl2RU95Z0JWTjRBandYTzlHRGgxSVhRVXY1a3M2RkkxNzdESDFiUjNBdlpnbFNoWVhQN3J1cVJwYmMtaG9acVVIdEtJazl1cmJZdmkybUlDZmVjc0k3STNKakItbjBUM2piSEJfT1VhMU1icEVrMnBLRmJ4bGh4eVBCS0Vla0RBenpyaGhyNW1IbGY2T1oyNDd6YTRJQ2pMWlBhVllIUlZlYnpqRWZkcmowVXdINGM0RU01Z1NRb2YyUTVKMmZCV19iQ2JlSFRUbG9OSFZ0MlZGOTMyQkzSAf8BQVVfeXFMT3ROcTZzWWp6amxBTTR5bzRHOWVaNjlSNUFLZkRScjVoSkNSTUVPbHQxUTR5MkQwSDRPRTU3LUZrQUUzQ3p6dlZndHdmU3B0MGxzRU84ODh2R2NLMWJBNGlEb1ZSOEZVdXhQRGd5VHk3bUl5OTl6M2R2clNFUHBYemdrcVpIeExLTXNsWElJOUtnRjB3Zl9JY1QxMGxWanlOMHhBTVB3SkNVaHprQjY4MGlVbUJtV0VSb2pJYUN5V3k1N2dGazN2M3pYalBZdlVGa29iSWltQnlTMTFJMEozOGJqV055allmYWotQ0R3SEtyMEFMZFdCUnBRWHQ2ZURN?oc=5" target="_blank">Nuevos cursos gratuitos de inteligencia artificial, datos y software con Microsoft y el Ministerio de las TIC</a>&nbsp;&nbsp;<font color="#6f6f6f">Infobae</font>
